@@ -28,7 +28,7 @@ html, body {
 .sidebar { 
     grid-row: 1 / -1;
     display: grid; 
-    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
     align-items: center;
     border: 1px solid black; 
 }
@@ -44,12 +44,11 @@ html, body {
 }
 
 .sidebar-set-one { 
-    display: grid;
     grid-row: 2 / 3;
 }
 .sidebar-set-two { 
     /* display:grid;  */
-    /* grid-row: 3 / 4; */
+    grid-row: 3 / 4;
 }
 .sidebar-img { 
     grid-column: 1 / 2;  
