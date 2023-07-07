@@ -11,37 +11,53 @@ html, body {
     height: 100%;
     display: grid; 
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1.5fr 5fr;
 }
 
 .header { 
     grid-column: 2 / -1; 
     border: 1px solid red; 
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 2.6px;
 }
 
 .main { 
     grid-column: 2 / -1; 
     grid-row: 2;
     border: 1px solid blue;
+    background-color: #e2e8f0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 
+.card { 
+    background-color: #f0b429; 
+}
 .sidebar { 
     grid-row: 1 / -1;
     display: grid; 
-    grid-template-rows: 1fr 2fr 3fr;
+    background-color: #1992d4;
+    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
     align-items: center;
     border: 1px solid black; 
+    grid-template-columns: 1fr 3fr;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.sidebar-pair { 
+
+.sidebar:first-child { 
+    grid-column: 2 / 3;
+    font-size: 20px;
+}
+/* .sidebar-pair { 
     grid-column: 1 / -1; 
+    grid-template-columns: 1fr 2fr 3fr;
     align-items: center; 
     width: 100%;
     height: 2rem;
     justify-self: start;
     border: 1px solid green; 
     display: grid; 
-    grid-template-columns: 1fr 3fr;
-}
+   
+} */
 
 .sidebar-set-one { 
     grid-row: 2 / 3;
@@ -52,8 +68,11 @@ html, body {
 }
 .sidebar-img { 
     grid-column: 1 / 2;  
-
+    margin-right: 2em;
+    justify-self: end;
 }
-.sidebar-text { 
+.sidebar-txt { 
+    font-size: 1.5em;
     grid-column: 2 / 3;
+    color: white;
 }
