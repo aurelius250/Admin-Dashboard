@@ -37,15 +37,13 @@ html, body {
     grid-row: 1 / -1;
     display: grid; 
     background-color: #1992d4;
-    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
     align-items: center;
     border: 1px solid black; 
-    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .sidebar:first-child { 
-    grid-column: 2 / 3;
     font-size: 20px;
 }
 /* .sidebar-pair { 
@@ -60,12 +58,25 @@ html, body {
    
 } */
 
-.sidebar-set-one { 
-    grid-row: 2 / 3;
+.sidebar-partition { 
+    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    border: 1px solid black; 
+    display: grid; 
 }
-.sidebar-set-two { 
-    /* display:grid;  */
+.middle-sidebar { 
+    grid-row: 2 / 3;
+ 
+ 
+}
+.lower-sidebar { 
+    display:grid; 
     grid-row: 3 / 4;
+    align-items: center;
+    border: 1px solid black; 
+    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-columns: 1fr 3fr;
 }
 .sidebar-img { 
     grid-column: 1 / 2;  
