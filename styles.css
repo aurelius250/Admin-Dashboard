@@ -29,7 +29,7 @@ button {
 .header { 
     display: grid; 
     grid-template-rows: 1fr 1fr; 
-    grid-template-columns: 0.60fr 0.40fr; 
+    grid-template-columns: 0.65fr 0.35fr; 
     grid-column: 2 / -1; 
     border: 1px solid red; 
     box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 2.6px;
@@ -42,7 +42,7 @@ button {
     align-items: center;
     justify-content: flex-start;
     padding-left: 3em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
 }
 
 .search-bar  {
@@ -50,7 +50,7 @@ button {
     border-radius: 10px; 
     margin-left: 1em;
     border: none;
-    width: 75%; 
+    width: 85%; 
     box-shadow: none;
     padding: 4px;
     
@@ -58,16 +58,38 @@ button {
 .header-user-info{ 
     display: flex; 
     align-items: center;
-    justify-items: center;
-    gap: 1em;
+    justify-content: center;
+    gap: 1.25em;
     border: 1px solid blue; 
     font-size: 15px;
     font-weight: 500;
+    padding-bottom: 1.5em;
 }
 
+.profile-picture { 
+    width: 32px; 
+    height: 32px; 
+}
+
+.header-greeting > img { 
+    width: 55px; 
+    height: 55px; 
+    align-self: center;
+    justify-self: center; 
+    margin-left: 3em;
+    grid-row: 1 / -1
+}
 .header-greeting { 
+    display: grid; 
+    column-gap: 1em;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 9fr;
     border: 1px solid orange; 
 
+}
+.header-greeting > p { 
+    padding: 0; 
+    margin: 0;
 }
 
 .header-buttons  {
