@@ -38,15 +38,31 @@ button {
 
 .header-search-bar { 
     border: 1px solid red;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 3em;
+    padding-bottom: 1em;
 }
 
 .search-bar  {
     background-color: #e2e8f0; 
     border-radius: 10px; 
-    width: 50%; 
+    margin-left: 1em;
+    border: none;
+    width: 75%; 
+    box-shadow: none;
+    padding: 4px;
+    
 }
 .header-user-info{ 
+    display: flex; 
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
     border: 1px solid blue; 
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .header-greeting { 
@@ -63,12 +79,15 @@ button {
     border: 1px solid blue;
     background-color: #e2e8f0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
 }
 
 .icon { 
     width: 20px; 
     height: 20px; 
+}
+
+.svg { 
+    filter: invert(100%) sepia(0%) saturate(7435%) hue-rotate(66deg) brightness(109%) contrast(100%);
 }
 .card { 
     background-color: #f0b429; 
@@ -83,8 +102,8 @@ button {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.sidebar:first-child { 
-    font-size: 20px;
+.sidebar-partition > p { 
+    font-size: 25px;
 }
 /* .sidebar-pair { 
     grid-column: 1 / -1; 
