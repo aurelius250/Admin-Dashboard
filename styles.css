@@ -79,13 +79,19 @@ button {
     margin-left: 3em;
     grid-row: 1 / -1
 }
+
 .header-greeting { 
     display: grid; 
     column-gap: 1em;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 9fr;
     border: 1px solid orange; 
+}
 
+.header-greeting>p:nth-child(2) { 
+    font-size: 0.75em;
+    align-self: end;
+    padding-bottom: 0.25em;
 }
 .header-greeting > p { 
     padding: 0; 
