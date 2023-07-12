@@ -16,7 +16,19 @@ button {
   width: 150px;
   padding: 0;
   margin: 0;
+  box-shadow: none; 
+  border: none;
   box-sizing: border-box;
+}
+
+button { 
+    background-color: #1992d4;
+    color: white;
+    padding: 2px; 
+    width: 6em;
+    border-radius: 15px; 
+    padding-top: 7px; 
+    padding-bottom: 7px; 
 }
 
 .outermost-grid { 
@@ -32,7 +44,9 @@ button {
     grid-template-columns: 0.65fr 0.35fr; 
     grid-column: 2 / -1; 
     border: 1px solid red; 
-    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 2.6px;
+    box-shadow: 0px 5px 5px 0px rgba(161,159,165,0.75);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(161,159,165,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(161,159,165,0.75);
 }
 
 
@@ -95,11 +109,17 @@ button {
 }
 .header-greeting > p { 
     padding: 0; 
+    font-weight: 500;
+    font-size: 1.25em;
     margin: 0;
 }
 
 .header-buttons  {
     border: 1px solid green; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 1em;
 }
 .main { 
     grid-column: 2 / -1; 
@@ -181,3 +201,4 @@ button {
     grid-column: 2 / 3;
     color: white;
 }
+
