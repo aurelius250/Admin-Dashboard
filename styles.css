@@ -132,9 +132,7 @@ button {
 .svg { 
     filter: invert(100%) sepia(0%) saturate(7435%) hue-rotate(66deg) brightness(109%) contrast(100%);
 }
-.card { 
-    background-color: #f0b429; 
-}
+
 .sidebar { 
     grid-row: 1 / -1;
     display: grid; 
@@ -217,8 +215,8 @@ button {
 
 .main-cards { 
     display: grid; 
-    grid-template-rows: repeat(auto-fit, minmax(160px, .3fr));
-    grid-template-columns: repeat(auto-fit, minmax(282px, .3fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     grid-column: 1 / -2; 
     grid-row: 1 / -1;
@@ -226,15 +224,18 @@ button {
 }
 
 .main-trending { 
-    grid-column: -1;
+    grid-column: -1 / -2;
     grid-row: -1 / -2;
     border: 1px solid red;
+    margin-right: 2em;
+
 }
 
 .main-announcements { 
-    grid-column: -1;
+    grid-column: -1 / -2 ;
     grid-row: -2 / -3;
     border: 1px solid blue;
+    margin-right: 2em;
 }
 
 .announcements-txt { 
@@ -259,5 +260,14 @@ button {
 .card { 
     width: 100%; 
     height: 100%; 
-    border:black; 
+    background: white; 
+    border-radius: 10px;
+    border-left: 8px solid #f0b429;
+    background-color: white; 
+    padding-left: 1.5em;
+}
+
+.card > p { 
+    color: grey;
+    margin-right: 3em;
 }
