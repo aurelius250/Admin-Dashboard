@@ -34,7 +34,7 @@ button {
 .outermost-grid { 
     height: 100%;
     display: grid;
-    grid-template-columns: 1.25fr 5fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1.5fr 5fr;
 }
 
@@ -69,9 +69,9 @@ button {
     border: none;
     width: 85%; 
     box-shadow: none;
-    padding: 4px;
-    
+    padding: 4px; 
 }
+
 .header-user-info{ 
     display: flex; 
     align-items: center;
@@ -126,7 +126,6 @@ button {
     gap: 1.4em;
 }
 
-
 .icon { 
     width: 20px; 
     height: 20px; 
@@ -138,7 +137,6 @@ button {
 
 .sidebar { 
     grid-row: 1 / -1;
-
 }
 
 .sidebar-div { 
@@ -177,16 +175,15 @@ button {
 }
 .middle-sidebar { 
     grid-row: 2 / 3;
- 
 }
 .lower-sidebar { 
-    
     display:grid; 
     grid-row: 3 / 4;
     align-items: center;
     border: 1px solid black; 
     grid-template-columns: 1fr 3fr;
 }
+
 .sidebar-img { 
     grid-column: 1 / 2;  
     margin-right: 0.5em;
@@ -196,6 +193,7 @@ button {
     height: 20px;
     text-align: center;
 }
+
 .sidebar-txt { 
     font-size: 1.25em;
     margin-left: 0.6em;
@@ -205,14 +203,11 @@ button {
 }
 
 .main { 
-
     grid-column: 2 / -1; 
     grid-row: 2;
-
 }
 
 .main-div { 
-
     display:grid; 
     grid-template-columns: 3fr 1fr; 
     grid-template-rows: 5.5fr 4.5fr;
@@ -224,7 +219,7 @@ button {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding-left: 1em;
     padding-right: 1em; 
-    padding-bottom: 4em;
+    padding-bottom: 1em;
     padding-top: 2em;
 }
 
@@ -243,7 +238,6 @@ button {
     grid-row: -1 / -2;
     border: 1px solid red;
     margin-right: 2em;
-
 }
 
 .main-announcements { 
