@@ -274,9 +274,29 @@ button {
     border-left: 8px solid #f0b429;
     background-color: white; 
     padding-left: 1.5em;
+    position: relative;
 }
 
+
+.card-icon-group { 
+    display: flex; 
+    gap: 15px; 
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center; 
+    margin-left: 60%; 
+    margin-bottom: 1.5em; 
+    margin-top: 1.5em;
+}
+
+.card > h4 { 
+    margin-top: 2em; 
+    margin-bottom: 0.25em;
+}
 .card > p { 
     color: grey;
-    margin-right: 3em;
+    margin-right: 1.5em;
+    margin-top: 0;
 }
