@@ -243,17 +243,34 @@ button {
 }
 
 .main-announcements { 
+    background-color: white; 
+    padding: 2rem;
     grid-column: -1 / -2 ;
     grid-row: -2 / -3;
     border: 1px solid blue;
     margin-right: 2em;
 }
 
+.announcements-header { 
+    font-weight: bold; 
+    font-size: 0.95rem; 
+    margin: 0;
+
+}
 .announcements-txt { 
     grid-column: -1 / -2; 
+    margin: 0; 
+    margin-top: 0.3rem;
     grid-row: 1 / 2;
+    font-size: 0.85rem;
     justify-self: start;  
     align-self: end; 
+    color: grey; 
+}
+
+.announcements-divider { 
+    color: #e8e8e8; 
+    margin: 1rem 0 1rem 0;
 }
 
 .cards-txt { 
