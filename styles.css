@@ -85,13 +85,13 @@ button {
 }
 
 .profile-picture { 
-    width: 32px; 
-    height: 32px; 
+    width: 55px; 
+    height: 55px; 
 }
 
 .header-greeting > img { 
-    width: 55px; 
-    height: 55px; 
+    width: 95px;
+    height: 95px;
     align-self: center;
     justify-self: center; 
     margin-left: 3em;
