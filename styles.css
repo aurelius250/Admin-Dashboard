@@ -78,7 +78,7 @@ button {
     justify-content: center;
     gap: 1.25em;
     border: 1px solid blue; 
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
     padding-bottom: 1.5em;
     padding-left: 6em;
@@ -104,17 +104,19 @@ button {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 9fr;
     border: 1px solid orange; 
+    padding-bottom: 1rem;
+
 }
 
 .header-greeting>p:nth-child(2) { 
     font-size: 0.75em;
     align-self: end;
-    padding-bottom: 0.25em;
+    padding-bottom: 0.25rem;
 }
 .header-greeting > p { 
     padding: 0; 
     font-weight: 500;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     margin: 0;
 }
 
@@ -146,24 +148,24 @@ button {
     background-color: #1992d4;
     align-items: center;
     border: 1px solid red; 
+    padding-top: 1rem;
     grid-template-rows: 0.2fr minmax(75px, 0.55fr) minmax(50px, 0.25fr);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+/* The "Dashboard" text on top */ 
 .sidebar-partition > p { 
-    font-size: 25px;
+    font-size: 1.5625rem;
+    margin-right: 3rem;
+    margin-left: 0.625rem;
 }
-/* .sidebar-pair { 
-    grid-column: 1 / -1; 
-    grid-template-columns: 1fr 2fr 3fr;
-    align-items: center; 
-    width: 100%;
-    height: 2rem;
-    justify-self: start;
-    border: 1px solid green; 
-    display: grid; 
-   
-} */
+
+.sidebar-main-logo { 
+    width: 50px; 
+    height: 50px;
+    filter: invert(100%) sepia(0%) saturate(7435%) hue-rotate(66deg) brightness(109%) contrast(100%);
+    margin-left: 1em;
+}
 
 .sidebar-partition { 
     grid-template-rows: repeat(auto-fill, minmax(45px, 1fr));
@@ -286,9 +288,9 @@ button {
     text-align: center;
     justify-content: flex-start;
     align-items: center; 
-    margin-left: 60%; 
+    margin-left: 55%; 
     margin-bottom: 1.5em; 
-    margin-top: 1.5em;
+    margin-top: 1.25em;
 }
 
 .card > h4 { 
