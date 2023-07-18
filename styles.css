@@ -54,10 +54,11 @@ button {
     -moz-box-shadow: 0px 5px 10px 0px rgba(161,159,165,0.75);
 }
 .header-search-bar { 
-    border: 1px solid red;
     display: flex; 
     align-items: center;
     justify-content: flex-start;
+
+    border: 1px solid red;
     padding-left: 3em;
     padding-bottom: 1.5em;
 }
@@ -211,8 +212,8 @@ button {
 
 .main-div { 
     display:grid; 
-    grid-template-columns: 3fr 1fr; 
-    grid-template-rows: 5.5fr 4.5fr;
+    grid-template-columns: 2.25fr 1fr; 
+    grid-template-rows: 3.5fr 5fr;
     gap: 25px; 
     width: 100%;
     height: 100%;
@@ -232,13 +233,12 @@ button {
     gap: 25px;
     grid-column: 1 / -2; 
     grid-row: 1 / -1;
-
     border: 1px solid green;
 }
 
 .main-trending { 
-    display: grid; 
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); 
+    display: flex; 
+    flex-direction: column; 
     grid-column: -1 / -2;
     border-radius: 10px;
     grid-row: -1 / -2;
@@ -246,20 +246,30 @@ button {
     margin-right: 2em;
     background-color: white;
     box-shadow: 5px 5px 10px 0px rgb(200, 199, 201);
-
 }
 
-.trending-pair { 
+.trending-partition { 
+    border: 1px solid black;
     display: grid; 
-    grid-template-columns: ;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 2fr 8fr;     
+}
+.trending-partition > img { 
+    grid-row: 1 / 3; 
+    grid-column: 1;
+}
+.trending-txt { 
+    grid-row: -2 / -3;
+    grid-column: -2 / -1;
 }
 .main-announcements { 
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
     background-color: white; 
     border-radius: 10px;
     padding: 2rem;
-    grid-column: -1 / -2 ;
     box-shadow: 5px 5px 10px 0px rgb(200, 199, 201);
-    grid-row: -2 / -3;
     border: 1px solid blue;
     margin-right: 2em;
 }
@@ -268,13 +278,19 @@ button {
     font-weight: bold; 
     font-size: 0.95rem; 
     margin: 0;
-
+    flex-grow: 1;
+    padding: 0;
 }
+
+.announcements-trio { 
+    display: flex; 
+    flex-direction: column;
+}
+
 .announcements-txt { 
-    grid-column: -1 / -2; 
     margin: 0; 
+    flex-grow: 1;
     margin-top: 0.3rem;
-    grid-row: 1 / 2;
     font-size: 0.85rem;
     justify-self: start;  
     align-self: end; 
@@ -283,7 +299,7 @@ button {
 
 .announcements-divider { 
     color: #e8e8e8; 
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 1rem 0; 
 }
 
 .cards-txt { 
@@ -291,11 +307,6 @@ button {
     align-self: end; 
     grid-row: 1 / 2; 
     grid-column: 1 / 2;
-}
-
-.trending-txt { 
-    grid-row: -2 / -3;
-    grid-column: -2 / -1;
 }
 
 .card { 
@@ -309,7 +320,6 @@ button {
     padding-left: 1.5em;
     position: relative;
 }
-
 
 .card-icon-group { 
     display: flex; 
