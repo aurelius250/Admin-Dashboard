@@ -213,7 +213,7 @@ button {
 .main-div { 
     display:grid; 
     grid-template-columns: 2.25fr 1fr; 
-    grid-template-rows: 3.5fr 5fr;
+    grid-template-rows: auto 3.5fr auto 5fr;
     gap: 25px; 
     width: 100%;
     height: 100%;
@@ -226,16 +226,25 @@ button {
     padding-top: 2em;
 }
 
+.main-div h4 { 
+    grid-row: 1 / 2; 
+    grid-column: 1 / -1;
+}
+
 .main-cards { 
     display: grid; 
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     grid-column: 1 / -2; 
-    grid-row: 1 / -1;
+    grid-row: 2 / -1;
     border: 1px solid green;
 }
 
+.main-cards + h4 { 
+    grid-row: 1; 
+    grid-column: 2;
+}
 .main-trending { 
     display: flex; 
     flex-direction: column; 
@@ -248,6 +257,10 @@ button {
     box-shadow: 5px 5px 10px 0px rgb(200, 199, 201);
 }
 
+.main-announcements + h4 { 
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4;
+}
 .trending-partition { 
     border: 1px solid black;
     display: grid; 
@@ -290,7 +303,7 @@ button {
     font-weight: bold; 
     font-size: 0.95rem; 
     margin: 0;
-    align-self: end;
+    align-self: start;
     flex-grow: 1;
     padding: 0;
 }
