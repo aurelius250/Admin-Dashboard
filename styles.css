@@ -277,27 +277,31 @@ button {
 .trending-partition { 
     border: 1px solid black;
     display: grid; 
-    margin: 10px;
+    margin: 15px;
+    margin-left: 0;
     grid-template-rows: 1fr 1fr; 
     grid-template-columns: 2fr 8fr;     
 }
+
 
 .trending-partition > h4 { 
     margin: 0; 
     align-self: end;
     margin-left: 4.5em;
+    font-size: 1rem;
     margin-bottom: 0.25em;
 }
 .trending-partition > img { 
     grid-row: 1 / 3; 
     grid-column: 1;
     align-self: center;
+    margin-left: 1.5em;
 }
 .trending-partition > p{ 
     align-self: start;
     padding: 0;
     margin: 0;
-    margin-left: 2em;
+    margin-left: 1.1em;
     color: grey; 
 }
 .main-announcements { 
